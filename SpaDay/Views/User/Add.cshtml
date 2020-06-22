@@ -1,0 +1,22 @@
+﻿<h1><b>Add User <span style="color:red">@ViewBag.error</span></b></h1>
+<form method="post" action="/user">
+    <div class="form-group">
+        <label>
+            Username
+            <input type="text" name="username" value="@ViewBag.username" class="form-control">
+        </label>
+        <label>
+            Email
+            <input type="email" name="Email" value="@ViewBag.email"class="form-control">
+        </label>
+        <label>
+            Password 
+            <input type="password" name="Password" class="form-control">
+        </label>
+        <label>
+            Verify Password 
+            <input type="password" name="verify" class="form-control">
+        </label>
+        <input type="submit" value="Submit" />
+    </div>
+</form>
